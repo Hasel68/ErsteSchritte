@@ -34,7 +34,7 @@ public class Hangman {
 		if (asterisk.equals(newasterisk)) {                              //Wenn die Antwort falsch ist wird der Galgen hochgezählt.
 			count++;
 			hangmanImage();
-		} else {
+		} else {                                                         // Bei richtiger Antwort zählt der Galgen nicht hoch.
 			asterisk = newasterisk;
 		}
 		if (asterisk.equals(word)) {                                     // alle Buchstaben wurden aufgedeckt und du gewinnst.
